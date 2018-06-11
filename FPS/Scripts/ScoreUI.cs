@@ -1,0 +1,35 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class ScoreUI : MonoBehaviour {
+
+
+    public static int Score;
+
+    Text text;
+
+
+
+    void Awake()
+    {
+
+        text = GetComponent<Text>();
+        Score = 0;
+
+    }
+
+
+     void Update()
+    {
+
+        text.text = "SCORE : " + Score;
+
+
+
+    }
+
+
+
+} 
